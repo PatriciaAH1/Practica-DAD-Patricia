@@ -1,0 +1,48 @@
+[versions]
+agp = "8.5.1"
+kotlin = "1.9.24"
+coreKtx = "1.13.0"
+junit = "4.13.2"
+junitVersion = "1.2.1"
+espressoCore = "3.6.1"
+appcompat = "1.7.0"
+material = "1.12.0"
+activity = "1.9.3"
+constraintlayout = "2.2.0"
+viewModelScope = "2.8.6"
+glide = "4.14.2"
+circleImage = "3.1.0"
+roundedImage = "2.3.0"
+room = "2.6.1"
+ksp = "1.9.0-1.0.12"
+retrofit = "2.9.0"
+gson = "2.9.0"
+youPlayer = "12.1.1"
+photoView = "2.3.0"
+
+[libraries]
+androidx-core-ktx = { group = "androidx.core", name = "core-ktx", version.ref = "coreKtx" }
+junit = { group = "junit", name = "junit", version.ref = "junit" }
+androidx-junit = { group = "androidx.test.ext", name = "junit", version.ref = "junitVersion" }
+androidx-espresso-core = { group = "androidx.test.espresso", name = "espresso-core", version.ref = "espressoCore" }
+androidx-appcompat = { group = "androidx.appcompat", name = "appcompat", version.ref = "appcompat" }
+material = { group = "com.google.android.material", name = "material", version.ref = "material" }
+androidx-activity = { group = "androidx.activity", name = "activity", version.ref = "activity" }
+androidx-constraintlayout = { group = "androidx.constraintlayout", name = "constraintlayout", version.ref = "constraintlayout" }
+viewModelScope = { group = "androidx.lifecycle", name = "lifecycle-viewmodel-ktx", version.ref = "viewModelScope"}
+glide = { group = "com.github.bumptech.glide", name = "glide", version.ref = "glide"}
+circleImage = { group = "de.hdodenhof", name = "circleimageview", version.ref = "circleImage"}
+roundedImage = { group = "com.makeramen", name = "roundedimageview", version.ref = "roundedImage"}
+room-runtime = { group = "androidx.room", name = "room-runtime", version.ref = "room" }
+room-compiler = { group = "androidx.room", name = "room-compiler", version.ref = "room" }
+room-ktx = {group = "androidx.room", name = "room-ktx", version.ref="room"}
+retrofit = {group = "com.squareup.retrofit2", name = "retrofit", version.ref = "retrofit"}
+gson = { group = "com.squareup.retrofit2", name = "converter-gson", version.ref = "gson"}
+youPlayer = {group = "com.pierfrancescosoffritti.androidyoutubeplayer", name = "core", version.ref = "youPlayer"}
+photoView = { group = "com.github.chrisbanes", name = "PhotoView", version.ref = "photoView"}
+
+[plugins]
+android-application = { id = "com.android.application", version.ref = "agp" }
+kotlin-android = { id = "org.jetbrains.kotlin.android", version.ref = "kotlin" }
+ksp = { id = "com.google.devtools.ksp", version.ref = "ksp" }
+

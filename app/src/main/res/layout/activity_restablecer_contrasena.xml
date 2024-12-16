@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.activity.RestablecerContrasenaActivity">
+
+
+    <ImageView
+        android:id="@+id/imageViewReset"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:contentDescription="@null"
+        android:foreground="@drawable/foreground_disen"
+        android:scaleType="centerCrop"
+        app:srcCompat="@drawable/foodpass"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="31dp" />
+
+
+    <ImageView
+        android:id="@+id/arrowBack"
+        android:layout_width="35dp"
+        android:layout_height="35dp"
+        android:layout_marginStart="28dp"
+        android:layout_marginTop="40dp"
+        android:contentDescription="@null"
+        android:src="@drawable/back_ios_new_24"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textViewCambiar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="128dp"
+        android:fontFamily="@font/lobster"
+        android:text="@string/restablecer_contrase_a"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:textSize="33sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/editTextUsuario"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:hint="@string/ingrese_su_nombre_de_usuario"
+        android:layout_marginTop="25dp"
+        android:textColorHint="@color/white"
+        android:textColor="@color/white"
+        android:autofillHints="name"
+        android:inputType="text"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/textViewCambiar"
+        app:layout_constraintWidth_percent=".8"
+        android:drawableStart="@drawable/account_circle_24"
+        android:drawablePadding="13dp"
+        android:backgroundTint="@color/white"/>
+
+
+    <EditText
+        android:id="@+id/editTextEmail"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="25dp"
+        android:backgroundTint="@color/white"
+        android:inputType="textEmailAddress"
+        android:autofillHints="emailAddress"
+        android:drawableStart="@drawable/email_24"
+        android:drawablePadding="13dp"
+        android:hint="@string/ingrese_su_email"
+        android:textColor="@color/white"
+        android:textColorHint="@color/white"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/editTextUsuario"
+        app:layout_constraintWidth_percent=".8" />
+
+
+    <EditText
+        android:id="@+id/editTextNuevaContrasena"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="25dp"
+        android:backgroundTint="@color/white"
+        android:drawableStart="@drawable/key_24"
+        android:inputType="textPassword"
+        android:autofillHints="password"
+        android:drawablePadding="13dp"
+        android:hint="@string/ingrese_su_contrase_a"
+        android:textColor="@color/white"
+        android:textColorHint="@color/white"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editTextEmail"
+        app:layout_constraintWidth_percent=".8" />
+
+
+    <Button
+        android:id="@+id/buttonCambiarContrasena"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/btn_bg_disen"
+        android:padding="14dp"
+        android:text="@string/cambiar_contase_a"
+        android:textAllCaps="false"
+        android:textColor="@color/white"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/editTextNuevaContrasena"
+        app:layout_constraintVertical_bias="0.218"
+        app:layout_constraintWidth_percent=".8" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

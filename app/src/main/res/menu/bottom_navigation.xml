@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/inicio"
+        android:icon="@drawable/home_24"
+        android:title="@string/inicio" />
+    <item
+        android:id="@+id/perfil"
+        android:icon="@drawable/account_circle_24"
+        android:title="@string/mi_perfil" />
+    <item
+        android:id="@+id/favoritos"
+        android:icon="@drawable/fav"
+        android:title="@string/Favoritos" />
+
+
+</menu>
